@@ -2,12 +2,6 @@
   text-align: center;
 }
 
-#planetas {
-  display: flex;
-  flex-direction: row;
-  background-color: white;
-}
-
 img {
   width: 140px;
 }
