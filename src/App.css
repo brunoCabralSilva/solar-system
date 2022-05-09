@@ -1,3 +1,10 @@
 .App {
   text-align: center;
 }
+#planetas {
+  display: flex;
+}
+
+#planetas img {
+  width: 140px;
+}
