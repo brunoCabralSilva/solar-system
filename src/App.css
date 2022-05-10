@@ -2,3 +2,168 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  background-image: url('./images/background.png');
+  background-position: 50% 0%;
+  background-size: cover;
+  font-family: Montserrat , sans-serif;
+}
+
+header {
+  align-items: center;
+  background-image: url('./images/180281.jpg');
+  background-position: 50% 70%;
+  background-size: cover;
+  color: white;
+  display: flex;
+  font-size: 35px;
+  height: 100px;
+  justify-content: center;
+  padding: 40px 0;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.div-planetas {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-weight: 100;
+}
+
+.TitlePlanetas {
+  color: white;
+  font-size: 30px;
+  padding: 30px 0 10px;
+  width: 93%;
+}
+
+.planetas {
+  align-items: center;
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.div-cada-planeta {
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 10px 5px;
+}
+
+.div-cada-planeta p {
+  font-size: 20px;
+  padding: 5px 0;
+}
+
+img {
+  animation: animate 5s linear infinite;
+  width: 9em;
+}
+
+@keyframes animate {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(45deg);
+  }
+
+  50% {
+    transform: rotate(90deg);
+  }
+
+  75% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.div-missions {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.div-mission-card {
+  align-items: center;
+  background-image: url('./images/180281.jpg');
+  background-position: 50% 80%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+
+}
+
+.div-mission-card p {
+  padding: 10px 0;
+}
+
+.div-all-mission-cards {
+  align-items: center;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+
+@media ( max-width : 900px ) {
+
+  .TitlePlanetas {
+    text-align: center;
+  }
+
+  .div-mission-card {
+    width: 40%;
+  }
+}
+
+@media ( max-width : 800px ) {
+
+  header {
+    font-size: 1.1em;
+  }
+
+  .TitlePlanetas {
+    color: white;
+    font-size: 30px;
+    padding: 30px 0 10px;
+    text-align: center;
+  }
+
+  .div-mission-card {
+    align-items: center;
+    background-image: url('./images/180281.jpg');
+    background-position: 50% 80%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+}

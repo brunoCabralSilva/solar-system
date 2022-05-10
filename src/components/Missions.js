@@ -12,9 +12,11 @@ class Missions extends React.Component {
     }
     const missao = missions.map((mission) => retornaCard(mission));
     return (
-      <div data-testid="missions">
+      <div data-testid="missions" className="div-missions">
         <Title headline="Missões" />
-        {missao}
+        <div className="div-all-mission-cards">
+          {missao}
+        </div>
       </div>
     );
   }
